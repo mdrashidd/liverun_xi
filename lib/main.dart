@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:liverun_xi/pages/base_page.dart';
 import 'package:liverun_xi/pages/home_page.dart';
+import 'package:liverun_xi/pages/signin_page.dart';
 import 'package:liverun_xi/pages/splash_page.dart';
 import 'package:liverun_xi/util/themes.dart';
 
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
       home: const SplashPage(),
       routes:{ '/splashpage': (context) => SplashPage(),
         '/homepage' : (context) => HomePage(),
+        '/basepage' : (context) => BasePage(),
+        '/signinpage' : (context) => SignInPage(),
       },
     );
     }

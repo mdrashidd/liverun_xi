@@ -5,11 +5,10 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-
+      
           children: [
             SizedBox(height: 20),
             Text('Welcome to LiveRun XI', style: TextStyle(fontWeight: FontWeight.normal, fontSize: 30, color: Colors.white,decoration: TextDecoration.none)),
@@ -18,9 +17,13 @@ class SplashPage extends StatelessWidget {
               print("Pressed Enter Button");
               Navigator.pushNamed(context,'/homepage');
             }, child: Text("Enter to start")),
+            SizedBox(height: 100),
+            ElevatedButton(onPressed: () {
+              print("Pressed Signin Button");
+              Navigator.pushNamed(context,'/signinpage');
+            }, child: Text("Sign in")),
           ],
         ),
-      ),
     );
   }
 }
