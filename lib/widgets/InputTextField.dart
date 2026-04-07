@@ -20,8 +20,13 @@ class InputTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
-        hintText: hint,
-        label: icon,
+        hintStyle: TextStyle(color: Colors.black54),
+        hint: Row(
+          children: [
+            icon,
+            Text(hint),
+          ],
+        ),
       ),
     );
   }
